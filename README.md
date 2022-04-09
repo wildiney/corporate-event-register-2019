@@ -8,4 +8,4 @@ Register system for a corporate event made exclusive for the iPads used in the e
 
 ## SCREENSHOT
 
-![screenshot](https://github.com/wildiney/corporate-event-register-2019/blob/master/screenshots/screenshot-01.png)
+![screenshot](https://github.com/wildiney/corporate-event-register-2019/blob/master/screenshots/screenshot-02.png)

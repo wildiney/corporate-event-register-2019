@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #1a3b47;
+  --verde-empresa: #79c5b4;
+  --gris: #e8e8e8;
+}
+@font-face {
+  font-family: 'playfair_displayregular';
+  src: url('playfairdisplay-regular-webfont.woff2') format('woff2'),
+    url('playfairdisplay-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  color: var(--primary-color);
+  background-color: var(--gris);
+}
+.container{
+  background-color: white;
+}
+p {
+  color: var(--primary-color);
+}
+input {
+  border-color: var(--primary-color);
+}
+h2 {
+  font-family: 'playfair_displayregular';
+  font-weight: 500;
+  display: block;
+  padding: 15px 0;
+  color: var(--primary-color);
+}
+h3 {
+  display: block;
+  background-color: var(--gris);
+  margin-top: 45px;
+  padding: 10px;
+  font-size: 1.1em;
+  line-height: 1.7em;
+  color: var(--primary-color);
+}
+.btn-success,
+.btn-success:visited {
+  background-color: var(--verde-empresa);
+}
+.btn-success:hover,
+.btn-success:active {
+  background-color: #26594e;
+}
+header{
+  height: 100px;
+  padding: 30px 0;
+}
+header .img_anindracompany{
+  margin-top:12px;
+}
+
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+@media (max-width: 767px) {
+  .btn-xs-block {
+    display: block;
+    width: 100%;
+  }
+  input[type='submit'].btn-xs-block,
+  input[type='reset'].btn-xs-block,
+  input[type='button'].btn-xs-block {
+    width: 100%;
+  }
+  .btn-block + .btn-xs-block,
+  .btn-xs-block + .btn-block,
+  .btn-xs-block + .btn-xs-block {
+    margin-top: 0.5rem;
+  }
+}

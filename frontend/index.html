@@ -1,0 +1,154 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cadastro Ação - SAP Now</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  <div class="container">
+    <header class="row">
+      <div class="col-3"><a href="/"><img src="img/logoempresa.png" width="130" class="float-left"></a></div>
+      <div class="col-2 offset-7"><img src="img/anindracabecera.svg" width="126" class="float-right img_anindracompany">
+      </div>
+    </header>
+    <nav>
+
+    </nav>
+    <main class="row">
+      <figure>
+        <img src="img/banner.jpg" class="figure-img img-fluid">
+      </figure>
+      <div class="col-lg-12">
+
+        <h2>SAP Now</h2>
+
+        <p>Cadastre seus dados e visite nosso stand no SAP Now para ganhar um delicioso Brigalé e
+          testar a sua sorte em nossa Slot Machine concorrendo a brindes da Empresa.</p>
+        <form action="" method="POST" onsubmit="return validateForm()">
+
+          <div class="form-group">
+            <label>Nome</label>
+            <input type="text" name="nome" class="required form-control form-control-sm">
+          </div>
+          <div class="form-group">
+            <label>Empresa</label>
+            <input type="text" name="empresa" class="required form-control form-control-sm">
+          </div>
+          <div class="form-group">
+            <label>Cargo</label>
+            <input type="text" name="cargo" class="required form-control form-control-sm">
+          </div>
+          <div class="form-group">
+            <label>E-mail</label>
+            <input type="email" name="email" class="required form-control form-control-sm">
+          </div>
+          <div class="form-group">
+            <label>Telefone</label>
+            <input type="tel" name="telefone" class="required form-control form-control-sm"
+              placeholder="+00 (00) 00000-0000">
+          </div>
+          <h3>Quais soluções SAP você possui hoje na sua empresa:</h3>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="solucoes_sap_empresa" value="SAP ECC"
+                  class="form-check-input">
+                SAP ECC</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="solucoes_sap_empresa" value="Success Factors"
+                  class="form-check-input">
+                Success Factors</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="solucoes_sap_empresa" value="Ariba"
+                  class="form-check-input">
+                Ariba</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="solucoes_sap_empresa" value="BI"
+                  class="form-check-input">
+                BI</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="solucoes_sap_empresa" value="Hana"
+                  class="form-check-input">
+                Hana</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="solucoes_sap_empresa" value="outros"
+                  class="form-check-input" onclick="showHide('outras_solucoes')">
+                Outros (descreva)</label>
+            </div>
+            <div class="form-group">
+              <input type="text" name="solucoes_sap_empresa_outros" id="outras_solucoes" class="form-control">
+            </div>
+          </div>
+          <h3>Quais seus interesses em produtos SAP:</h3>
+          <div class="form-group">
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="interesses_produtos_sap" value="S/4 Migração"
+                  class="form-check-input">
+                S/4 Migração</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="interesses_produtos_sap"
+                  value="S/4 Implementação" class="form-check-input">
+                S/4 Implementação</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="interesses_produtos_sap"
+                  value="Success Factors" class="form-check-input">
+                Success Factors</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="interesses_produtos_sap" value="iRPA"
+                  class="form-check-input">
+                iRPA</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="interesses_produtos_sap" value="Ariba"
+                  class="form-check-input">
+                Ariba</label>
+            </div>
+            <div class="form-check">
+              <label class="form-check-label"><input type="checkbox" name="interesses_produtos_sap" value="outros"
+                  class="form-check-input" onclick="showHide('outros_interesses')">
+                Outros (descreva)</label>
+            </div>
+            <div class="form-group">
+              <input type="text" name="interesses_produtos_sap_outros" id="outros_interesses" class="form-control">
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-success btn-xs-block btn-sm-block btn-md-block">Cadastrar</button>
+          </div>
+        </form>
+      </div>
+
+  </div>
+  </main>
+  <footer>&copy; 2019 - empresa.com</footer>
+  <script src="js/scripts.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
